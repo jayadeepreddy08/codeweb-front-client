@@ -14,7 +14,7 @@ function Blog() {
 
   const fetchBlogPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/blog');
+      const response = await axios.get('https://codeweb-backend-server.onrender.com/blog');
       setBlogs(response.data);
     } catch (error) {
       console.error('Error fetching blog posts:', error);

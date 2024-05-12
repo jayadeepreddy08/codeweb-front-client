@@ -21,7 +21,7 @@ function LeetPost({ match }) {
   useEffect(() => {
     const fetchLeetPosts = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/leet/${(id)}`); // Use match.params.id to fetch specific blog post
+        const response = await axios.get(`https://codeweb-backend-server.onrender.com/leet/${(id)}`); // Use match.params.id to fetch specific blog post
         setLeet(response.data);
         
       } catch (error) {

@@ -14,7 +14,7 @@ function Solutions() {
 
   const fetchLeetPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/leet');
+      const response = await axios.get('https://codeweb-backend-server.onrender.com/leet');
       setLeets(response.data);
     } catch (error) {
       console.error('Error fetching blog posts:', error);

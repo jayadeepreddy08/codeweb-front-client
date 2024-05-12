@@ -9,7 +9,7 @@ function BlogPost({ match }) {
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/blog/${(id)}`); // Use match.params.id to fetch specific blog post
+        const response = await axios.get(`https://codeweb-backend-server.onrender.com/blog/${(id)}`); // Use match.params.id to fetch specific blog post
         setBlog(response.data);
         
       } catch (error) {
