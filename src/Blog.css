@@ -1,0 +1,30 @@
+
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute tiles equally */
+    padding: 50px;
+    gap: 50px;
+    
+}
+.blog-card{
+    transition: transform 0.6s ease;
+}
+.blog-card:hover{
+    transform: translateY(-10px);
+    border: 10px;
+}   
+
+.background-image {
+  position: absolute; /* Set the position to fixed to cover the entire viewport */
+  bottom: 0;
+  
+  width: 100%;
+  background-repeat: repeat-x;
+  height:45%;
+  background-size:contain; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  z-index: -1; /* Ensure the background is behind other content */
+}
+
+  
